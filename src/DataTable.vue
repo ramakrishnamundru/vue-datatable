@@ -89,7 +89,9 @@ export default {
     props: {
         title: {},
         columns: {},
-        rows: {},
+        rows: {
+            required: true
+        },
         onClick: {},
         customButtons: {
             default: () => []
@@ -272,9 +274,7 @@ export default {
         }
     },
 
-    mounted: function() {
-        this.currentPerPage = this.currentPerPage
-    }
+    mounted: function() {}
 }
 </script>
 <style scoped>
