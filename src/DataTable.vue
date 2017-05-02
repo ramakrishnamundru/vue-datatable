@@ -88,7 +88,9 @@ import Fuse from 'fuse.js';
 export default {
     props: {
         title: {},
-        columns: {},
+        columns: {
+            required: true
+        },
         rows: {
             required: true
         },
@@ -394,6 +396,7 @@ table {
     display: flex;
     -webkit-display: flex;
     margin: 0;
+    list-style-type: none;
 }
 
 .table-footer .material-pagination li a {
