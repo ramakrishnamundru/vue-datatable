@@ -1,47 +1,19 @@
 {
-  "name": "vue-materialize-datatable",
-  "version": "0.6.2",
-  "description": "Datatable for VueJS with Materialize",
-  "author": "Yousef Sultan <yousef.su.2000@gmail.com>",
-  "private": false,
-  "main": "./src/DataTable.vue",
-  "license": "MIT",
-  "scripts": {
-    "demo": "cd docs && webpack",
-    "build": "webpack"
-  },
-  "keywords": [
-    "Vue",
-    "Datatable",
-    "Materialize",
-    "Table Component"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MicroDroid/vue-materialize-datatable.git"
-  },
-  "homepage": "https://github.com/MicroDroid/vue-materialize-datatable",
-  "bugs": {
-    "url": "https://github.com/MicroDroid/vue-materialize-datatable/issues"
-  },
-  "dependencies": {
-    "babel-runtime": "^6.0.0",
-    "vue": "^1.0.21",
-    "fuse.js": "^2.6.2"
-  },
-  "devDependencies": {
-    "babel-core": "^6.0.0",
-    "babel-loader": "^6.0.0",
-    "babel-plugin-transform-runtime": "^6.0.0",
-    "babel-preset-es2015": "^6.0.0",
-    "babel-preset-stage-2": "^6.0.0",
-    "babel-register": "^6.0.0",
-    "css-loader": "^0.23.0",
-    "node-sass": "^3.8.0",
-    "sass-loader": "^4.0.0",
-    "vue-html-loader": "^1.2.3",
-    "vue-loader": "^8.3.0",
-    "vue-style-loader": "^1.0.0",
-    "webpack": "^1.12.2"
-  }
+    "name": "issue",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "author": "Lorvent",
+    "devDependencies": {
+        "laravel-mix": "^0.10.0",
+        "cross-env": "^3.2.3"
+    },
+    "dependencies": {
+        "fuse.js": "^2.6.2",
+        "vue": "^2.2.6"
+    }
 }

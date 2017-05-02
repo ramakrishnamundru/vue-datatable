@@ -1,1 +1,10 @@
+.DS_Store
+node_modules/
+.idea/
+/dist/
+/js/
+/images/
+/fonts/
 npm-debug.log
+mix-manifest.json
+hot
