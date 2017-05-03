@@ -20,7 +20,7 @@
         <div v-if="this.searching">
             <div id="search-input-container">
                 <label>
-                    <input type="search" id="search-input" class="form-control" placeholder="Search data" :value="searchInput" @input="(e) => {this.searchInput = e.target.value}">
+                    <input type="search" id="search-input" class="form-control" placeholder="Search data" v-model="searchInput">
                 </label>
             </div>
         </div>
@@ -274,9 +274,7 @@ export default {
                 paginatedRows = paginatedRows.slice((this.currentPage - 1) * this.currentPerPage, this.currentPerPage === -1 ? paginatedRows.length + 1 : this.currentPage * this.currentPerPage);
             return paginatedRows;
         }
-    },
-
-    mounted: function() {}
+    }
 }
 </script>
 <style scoped>
