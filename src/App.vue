@@ -7,7 +7,9 @@
 </template>
 <script>
 import Vue from 'vue';
-import DataTable from './DataTable.vue';
+import {
+    DataTable
+} from './component/index';
 export default {
     components: {
         "datatable": DataTable
