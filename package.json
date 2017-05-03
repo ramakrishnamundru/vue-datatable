@@ -1,6 +1,6 @@
 {
   "name": "vue2-material-datatable",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Datatable for VueJS with Materialize",
   "author": "Rama Krishna <ramakrishnamundru471@gmail.com>",
   "private": false,
