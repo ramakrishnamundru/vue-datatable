@@ -3618,6 +3618,10 @@ marked@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
 
+material-design-icons@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/material-design-icons/-/material-design-icons-3.0.1.tgz#9a71c48747218ebca51e51a66da682038cdcb7bf"
+
 materialize-css@^0.98.2:
   version "0.98.2"
   resolved "https://registry.yarnpkg.com/materialize-css/-/materialize-css-0.98.2.tgz#f9e4239fd27e2a917a0de379d74d508e2d92ec8e"

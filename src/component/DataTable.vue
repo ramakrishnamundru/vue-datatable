@@ -28,10 +28,10 @@
             <thead>
                 <tr>
                     <th v-for="(column, index) in columns" @click="sort(index)" :class="(sortable ? 'sorting ' : '')
-							+ (sortColumn === index ?
-								(sortType === 'desc' ? 'sorting-desc' : 'sorting-asc')
-								: '')
-							+ (column.numeric ? ' numeric' : '')" :style="{width: column.width ? column.width : 'auto'}">
+                            + (sortColumn === index ?
+                                (sortType === 'desc' ? 'sorting-desc' : 'sorting-asc')
+                                : '')
+                            + (column.numeric ? ' numeric' : '')" :style="{width: column.width ? column.width : 'auto'}">
                         {{column.label}}
                     </th>
                     <slot name="thead-tr"></slot>
@@ -84,7 +84,6 @@
 </template>
 <script>
 import Fuse from 'fuse.js';
-require("materialize-css/dist/css/materialize.min.css");
 export default {
     props: {
         title: {},
@@ -277,6 +276,10 @@ export default {
     }
 }
 </script>
+<style scoped lang="scss">
+@import url('/node_modules/materialize-css/dist/css/materialize.min.css');
+@import url('/node_modules/material-design-icons/iconfont/material-icons.css');
+</style>
 <style scoped>
 div.material-table {
     padding: 0;
@@ -490,7 +493,7 @@ table th.sorting-asc:after {
     word-wrap: normal;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
-    content: "arrow_back";
+    content: " arrow_back ";
     -webkit-transform: rotate(90deg);
     display: none;
     vertical-align: middle;
@@ -503,7 +506,7 @@ table th.sorting-desc:after {
 }
 
 table th.sorting-desc:after {
-    content: "arrow_forward";
+    content: "arrow_forward ";
 }
 
 table tbody tr:hover {

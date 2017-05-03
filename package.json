@@ -1,37 +1,38 @@
 {
-  "name": "vue2-material-datatable",
-  "version": "1.0.2",
-  "description": "Datatable for VueJS with Materialize",
-  "author": "Rama Krishna <ramakrishnamundru471@gmail.com>",
-  "private": false,
-  "license": "MIT",
-  "keywords": [
-    "Vue2",
-    "Datatable",
-    "Materialize",
-    "Table Component"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ramakrishnamundru/vue-materialize-datatable.git"
-  },
-  "homepage": "https://github.com/ramakrishnamundru/vue-materialize-datatable",
-  "bugs": {
-    "url": "https://github.com/ramakrishnamundru/vue-materialize-datatable/issues"
-  },
-  "main": "src/component/DataTable.vue",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
-  "devDependencies": {
-    "cross-env": "^3.2.3",
-    "laravel-mix": "^0.10.0"
-  },
-  "dependencies": {
-    "fuse.js": "^2.6.2",
-    "materialize-css": "^0.98.2",
-    "vue": "^2.2.6"
-  }
+    "name": "vue2-material-datatable",
+    "version": "1.0.2",
+    "description": "Datatable for VueJS with Materialize",
+    "author": "Rama Krishna <ramakrishnamundru471@gmail.com>",
+    "private": false,
+    "license": "MIT",
+    "keywords": [
+        "Vue2",
+        "Datatable",
+        "Materialize",
+        "Table Component"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ramakrishnamundru/vue-materialize-datatable.git"
+    },
+    "homepage": "https://github.com/ramakrishnamundru/vue-materialize-datatable",
+    "bugs": {
+        "url": "https://github.com/ramakrishnamundru/vue-materialize-datatable/issues"
+    },
+    "main": "src/component/DataTable.vue",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "cross-env": "^3.2.3",
+        "laravel-mix": "^0.10.0"
+    },
+    "dependencies": {
+        "fuse.js": "^2.6.2",
+        "material-design-icons": "^3.0.1",
+        "materialize-css": "^0.98.2",
+        "vue": "^2.2.6"
+    }
 }
