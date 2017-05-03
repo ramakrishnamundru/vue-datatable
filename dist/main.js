@@ -9797,82 +9797,156 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         "datatable": __WEBPACK_IMPORTED_MODULE_1__DataTable_vue___default.a
     },
     data: function data() {
+        //http://www.filltext.com/?rows=20&fname={firstName}&lname={lastName}&age={number|50}&state={usState|abbr}
         return {
             rowdata: [{
-                name: "test1",
-                city: "city1"
+                "fname": "Gale",
+                "lname": "Mcmyne",
+                "age": 16,
+                "state": "RI",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test2",
-                city: "city2"
+                "fname": "Tighe",
+                "lname": "Walls",
+                "age": 43,
+                "state": "AL",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test3",
-                city: "city3"
+                "fname": "Anuj",
+                "lname": "Wittcop",
+                "age": 16,
+                "state": "MO",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test4",
-                city: "city4"
+                "fname": "Elisha",
+                "lname": "Mahan",
+                "age": 28,
+                "state": "MA",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test5",
-                city: "city5"
+                "fname": "Sutman",
+                "lname": "Kiab",
+                "age": 18,
+                "state": "ME",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test1",
-                city: "city1"
+                "fname": "Wazir",
+                "lname": "Odonoghue",
+                "age": 27,
+                "state": "ND",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test2",
-                city: "city2"
+                "fname": "Renardo",
+                "lname": "Schuessler",
+                "age": 5,
+                "state": "OK",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test3",
-                city: "city3"
+                "fname": "Colleen",
+                "lname": "Schotuen",
+                "age": 33,
+                "state": "DE",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test4",
-                city: "city4"
+                "fname": "Natalia",
+                "lname": "Sacks",
+                "age": 24,
+                "state": "FL",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test5",
-                city: "city5"
+                "fname": "Kamaniee",
+                "lname": "Knaus",
+                "age": 11,
+                "state": "ID",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test1",
-                city: "city1"
+                "fname": "Deena",
+                "lname": "Downing",
+                "age": 39,
+                "state": "NM",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test2",
-                city: "city2"
+                "fname": "Gueorgui",
+                "lname": "Downing",
+                "age": 22,
+                "state": "LA",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test3",
-                city: "city3"
+                "fname": "Toya",
+                "lname": "Wallace",
+                "age": 19,
+                "state": "MD",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test4",
-                city: "city4"
+                "fname": "Deborah",
+                "lname": "Morrison",
+                "age": 14,
+                "state": "VT",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test5",
-                city: "city5"
+                "fname": "Nerissa",
+                "lname": "Wade",
+                "age": 7,
+                "state": "DE",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test1",
-                city: "city1"
+                "fname": "Glenn",
+                "lname": "Bommi",
+                "age": 8,
+                "state": "MO",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test2",
-                city: "city2"
+                "fname": "Kate",
+                "lname": "Azcunaga",
+                "age": 25,
+                "state": "ME",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test3",
-                city: "city3"
+                "fname": "Jesse",
+                "lname": "Ingham",
+                "age": 50,
+                "state": "OK",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test4",
-                city: "city4"
+                "fname": "Gateri",
+                "lname": "Sergent",
+                "age": 50,
+                "state": "MA",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }, {
-                name: "test5",
-                city: "city5"
+                "fname": "Marian",
+                "lname": "Malmfeldt",
+                "age": 50,
+                "state": "DC",
+                "button": "<button class='waves-effect waves-light btn nopadding'>Action</button>"
             }],
+
             columndata: [// Array of objects
             {
-                label: 'Name', // Column name
-                field: 'name', // Field name from row
-                // Use dot for nested props
-                // Can be function with row as 1st param
+                label: 'fname', // Column name
+                field: 'fname', // Field name from row
                 numeric: false, // Affects sorting
                 html: false }, {
-                label: 'City', // Column name
-                field: 'city', // Field name from row
-                // Use dot for nested props
-                // Can be function with row as 1st param
-                numeric: false, // Affects sorting
-                html: false }]
+                label: 'lname',
+                field: 'lname',
+                numeric: false,
+                html: false
+            }, {
+                label: 'age',
+                field: 'age',
+                numeric: true,
+                html: false
+            }, {
+                label: 'state',
+                field: 'state',
+                numeric: false,
+                html: false
+            }, {
+                label: 'Action',
+                field: 'button',
+                numeric: false,
+                html: true
+            }]
         };
     }
 });
@@ -10141,9 +10215,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             if (this.paginate) paginatedRows = paginatedRows.slice((this.currentPage - 1) * this.currentPerPage, this.currentPerPage === -1 ? paginatedRows.length + 1 : this.currentPage * this.currentPerPage);
             return paginatedRows;
         }
-    },
-
-    mounted: function mounted() {}
+    }
 });
 
 /***/ }),
@@ -11303,9 +11375,7 @@ module.exports = Component.exports
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){
-var this$1 = this;
-var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "card material-table"
   }, [_c('div', {
@@ -11361,6 +11431,12 @@ var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
       "id": "search-input-container"
     }
   }, [_c('label', [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.searchInput),
+      expression: "searchInput"
+    }],
     staticClass: "form-control",
     attrs: {
       "type": "search",
@@ -11368,11 +11444,12 @@ var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
       "placeholder": "Search data"
     },
     domProps: {
-      "value": _vm.searchInput
+      "value": (_vm.searchInput)
     },
     on: {
-      "input": function (e) {
-        this$1.searchInput = e.target.value
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.searchInput = $event.target.value
       }
     }
   })])])]) : _vm._e(), _vm._v(" "), _c('table', {
