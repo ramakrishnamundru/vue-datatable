@@ -276,10 +276,8 @@ export default {
     }
 }
 </script>
-<style scoped lang="scss">
-@import url('/node_modules/materialize-css/dist/css/materialize.min.css');
-@import url('/node_modules/material-design-icons/iconfont/material-icons.css');
-</style>
+<style scoped src="materialize-css/dist/css/materialize.min.css"></style>
+<style scoped src="material-design-icons/iconfont/material-icons.css"></style>
 <style scoped>
 div.material-table {
     padding: 0;

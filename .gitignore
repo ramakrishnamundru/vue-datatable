@@ -1,8 +1,6 @@
 .DS_Store
 node_modules/
 .idea/
-/images/
-/fonts/
 npm-debug.log
 mix-manifest.json
 hot
