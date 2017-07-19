@@ -3,16 +3,16 @@
         <div class="table-header">
             <span class="table-title">{{title}}</span>
             <div class="actions">
-                <a v-for="button in customButtons" href="javascript:undefined" class="waves-effect btn-flat nopadding" v-if="button.hide ? !button.hide : true" @click="button.onclick">
+                <a v-for="button in customButtons" href="javascript:undefined" class="nopadding" v-if="button.hide ? !button.hide : true" @click="button.onclick">
                     <i class="material-icons">{{button.icon}}</i>
                 </a>
-                <a href="javascript:undefined" class="waves-effect btn-flat nopadding" v-if="this.printable" @click="print">
+                <a href="javascript:undefined" class="nopadding" v-if="this.printable" @click="print">
                     <i class="material-icons">print</i>
                 </a>
-                <a href="javascript:undefined" class="waves-effect btn-flat nopadding" v-if="this.exportable" @click="exportExcel">
+                <a href="javascript:undefined" class="nopadding" v-if="this.exportable" @click="exportExcel">
                     <i class="material-icons">description</i>
                 </a>
-                <a href="javascript:undefined" class="waves-effect btn-flat nopadding" v-if="this.searchable" @click="search">
+                <a href="javascript:undefined" class="nopadding" v-if="this.searchable" @click="search">
                     <i class="material-icons">search</i>
                 </a>
             </div>
@@ -34,7 +34,6 @@
                             + (column.numeric ? ' numeric' : '')" :style="{width: column.width ? column.width : 'auto'}">
                         {{column.label}}
                     </th>
-                    <slot name="thead-tr"></slot>
                 </tr>
             </thead>
             <tbody>
@@ -44,7 +43,6 @@
                     </td>
                     <td v-for="column in columns" :class="column.numeric ? 'numeric' : ''" v-html="collect(row, column.field)" v-if="column.html">
                     </td>
-                    <slot name="tbody-tr" :row="row"></slot>
                 </tr>
             </tbody>
         </table>
@@ -276,8 +274,6 @@ export default {
     }
 }
 </script>
-<style scoped src="materialize-css/dist/css/materialize.min.css"></style>
-<style scoped src="material-design-icons/iconfont/material-icons.css"></style>
 <style scoped>
 div.material-table {
     padding: 0;

@@ -1,6 +1,6 @@
-# vue2-material-datatable [![NPM version](https://badge.fury.io/js/vue2-material-datatable.svg)](https://badge.fury.io/js/vue2-material-datatable)
+# vue2-material-datatable [![NPM version](https://badge.fury.io/js/vue2datatable.svg)](https://badge.fury.io/js/vue2datatable)
 
-> A fancy Materialize CSS datatable VueJS component
+> A fancy datatable VueJS component
 
 > Library is kind of unstable. Bugs, missing features might be present
 
@@ -20,7 +20,7 @@
 ## Installation
 
 ```bash
-npm i vue2-material-datatable --save
+npm i vue2datatable --save
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ npm i vue2-material-datatable --save
 Include the component,
 
 ```javascript
-import DataTable from 'vue2-material-datatable';
+import DataTable from 'vue2datatable';
 ```
 
 Then, register the component, however you like:
